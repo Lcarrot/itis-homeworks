@@ -1,0 +1,8 @@
+POST http://localhost/generate/simple
+ACCESS-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoZWxsb1dvcmxkQG1haWwucnUiLCJyb2xlIjoiVVNFUiIsImV4cCI6MTY0MzA2NjcyNn0.L2wz2L1KJUjMfRgXkrp8rawN2bDnB97aq51MYpCyAf8
+
+###
+POST http://localhost/generate/harder
+REFRESH_TOKEN: 83c9e81a-4438-4c7d-b494-fc541c694867
+ACCESS-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoZWxsb1dvcmxkQG1haWwucnUiLCJyb2xlIjoiVVNFUiIsImV4cCI6MTY0Mjk0MDI2NH0.lpMYOzhEBLlcGMcEWn-6Au90DRXi6EUQvDWBQFSwjdc
+

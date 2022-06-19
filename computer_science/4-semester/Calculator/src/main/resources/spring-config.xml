@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- Beans for operations   -->
+    <bean id="addition" class="app.operations.Addition"/>
+    <bean id="multiplication" class="app.operations.Multiplication"/>
+    <bean id="subtraction" class="app.operations.Subtraction"/>
+
+<!-- Initialize factory for operations   -->
+    <bean id="factory" class="org.springframework.beans.factory.config.ServiceLocatorFactoryBean">
+        <property name="serviceLocatorInterface" value="app.IOperationFactory"/>
+        <property name="serviceMappings">
+            <props>
+                <prop key="+">addition</prop>
+                <prop key="-">subtraction</prop>
+                <prop key="*">multiplication</prop>
+            </props>
+        </property>
+    </bean>
+</beans>

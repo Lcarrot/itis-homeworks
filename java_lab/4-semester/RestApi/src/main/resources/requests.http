@@ -1,0 +1,24 @@
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "email": "am@ma.ru",
+  "password": "wasd"
+}
+
+###
+
+GET http://localhost:8080/user/1
+REFRESH-TOKEN: ea20b231-2670-4e0d-a9e6-899cbe86d129
+ACCESS-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbUBtYS5ydSIsInJvbGUiOiJBRE1JTiIsImV4cCI6MTYyMDM4OTM5OH0.D_VyzsNCD0JIPdsjNUL8Z8jeHmrLvle3Z4Iys-MnGLc
+###
+
+POST http://localhost:8080/update/updateAccessToken
+REFRESH-TOKEN: ea20b231-2670-4e0d-a9e6-899cbe86d129
+ACCESS-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbUBtYS5ydSIsInJvbGUiOiJBRE1JTiIsImV4cCI6MTYyMDM4OTM5OH0.D_VyzsNCD0JIPdsjNUL8Z8jeHmrLvle3Z4Iys-MnGLc
+
+###
+POST http://localhost:8080/update/updateRefreshToken
+REFRESH-TOKEN: ea20b231-2670-4e0d-a9e6-899cbe86d129
+ACCESS-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbUBtYS5ydSIsInJvbGUiOiJBRE1JTiIsImV4cCI6MTYyMDM4OTM5OH0.D_VyzsNCD0JIPdsjNUL8Z8jeHmrLvle3Z4Iys-MnGLc
+

@@ -1,0 +1,37 @@
+POST http://localhost/registry
+Content-Type: application/json
+
+{
+  "firstName": "Leonid",
+  "lastName": "Tyschenko",
+  "email": "helloWorld@mail.ru",
+  "age": 20,
+  "password": "700ytrewq"
+}
+
+###
+
+POST http://localhost/login
+Content-Type: application/json
+
+{
+  "email": "helloWorld@mail.ru",
+  "password": "700ytrewq"
+}
+
+###
+
+GET http://localhost/logout
+Content-Type: application/json
+REFRESH_TOKEN: 4e7de44a-18e7-401a-a902-e1aa7f836cb1
+ACCESS-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoZWxsb1dvcmxkQG1haWwucnUiLCJyb2xlIjoiVVNFUiIsImV4cCI6MTY0MjM1NTIzN30.ZZXttGpax7M4HGtAeYxSVutcV1W2PYRwkjJ-nS4tqA4
+
+###
+POST http://localhost/update/updateAccessToken
+Content-Type: application/json
+REFRESH_TOKEN: d0b29f2a-8ef4-40e7-815c-30c61ca43d37
+
+###
+POST http://localhost/update/updateRefreshToken
+Content-Type: application/json
+REFRESH_TOKEN: e7441544-f5b9-4430-b46f-d9c45e91fb16

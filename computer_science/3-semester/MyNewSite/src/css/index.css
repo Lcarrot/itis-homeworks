@@ -1,0 +1,137 @@
+a {
+    text-decoration: none;
+    font-size: 1em;
+    font-family: Snell Roundhand, cursive;
+    color: cadetblue;
+}
+
+h1 {
+    padding: 0;
+    margin: 0.25%;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: Palatino, URW Palladio L, serif;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444444;
+}
+
+@media screen and (max-width: 600px) {
+    p {
+        font-size: 4px;
+    }
+    a {
+        font-size: 4px;
+    }
+}
+
+
+.login div {
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid #0000cc;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.login {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+}
+
+.login:target {
+    display: block;
+}
+
+body {
+    background-color: #F0FFFF;
+}
+
+.right-part, .left-part {
+    padding: 3em 1em;
+    margin: 1em 0;
+}
+
+.left-part a img {
+    width: 100%;
+    border-radius: 50%;
+    margin: 0.25em 0.5em;
+}
+
+.description nav {
+    display: block;
+    float: left;
+    border: 1px solid #008080;
+    background-color: #ffcccc;
+    padding: 0.5%;
+    margin: 0 1% 1%;
+}
+
+.description ul {
+    margin: 0;
+    padding: 2px;
+}
+
+.right-part {
+    border-left: 3px solid #008080;
+    border-bottom: 3px solid #008080;
+    background-color: #FFFAFA;
+}
+
+main h1 {
+    font-family: Snell Roundhand, cursive;
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+    size: 2px;
+    color: #ff0000;
+}
+
+footer {
+    float: left;
+    width: 100%;
+    display: block;
+}
+
+#toTop {
+    width:100px;
+    border:1px solid #ccc;
+    background:#f7f7f7;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom:10px; /* отступ кнопки от нижнего края страницы*/
+    right:10px;
+    cursor:pointer;
+    display:none;
+    color:#333;
+    font-family:verdana;
+    font-size:11px;
+}

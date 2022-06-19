@@ -1,0 +1,20 @@
+h1 {
+    color:#ccc;
+}
+table tr td{
+    text-align:center;
+    border:1px solid gray;
+    padding:4px;
+}
+table tr th{
+    background-color:#84C7FD;
+    color:#fff;
+    width: 100px;
+}
+.itext{
+    color:#84C7FD;
+    font-weight:bold;
+}
+.description{
+    color:gray;
+}

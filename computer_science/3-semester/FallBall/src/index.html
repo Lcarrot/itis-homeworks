@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title> Fall Ball</title>
+</head>
+<body id = "body">
+    <img src="2.png" alt="ball" id="ball">
+<script>
+    ball.onclick = function () {
+        fall();
+    }
+    let body = document.getElementById('body');
+    function fall() {
+        let startTime = Date.now();
+        let timer = setInterval(function (){
+            let timePaused = Date.now() - startTime;
+            ball.style.top = timePaused + 'px';
+            if (timePaused > 500){
+                clearInterval(timer);
+                climb()
+            }
+
+        }, 20);
+    }
+    function climb() {
+        let startTime = Date.now();
+        let timer = setInterval(function (){
+            let timePaused = Date.now() - startTime;
+            ball.style.top = (body.offsetHeight-timePaused) + 'px';
+            if (timePaused > 500) clearInterval(timer);
+        }, 20);
+    }
+</script>
+</body>
+</html>
