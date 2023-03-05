@@ -1,0 +1,39 @@
+micronaut:
+  application:
+    name: puckchain
+netty:
+  default:
+    allocator:
+      max-order: 3
+
+signature:
+  algorithm:
+    sign: SHA256withRSA
+    digest: SHA-256
+  provider: BC
+
+datasources:
+  default:
+    password: '0542'
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/puckchain
+    driverClassName: org.postgresql.Driver
+    dialect: POSTGRES
+
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        show_sql: true
+arbiter:
+  url: http://89.108.115.118/ts
+  key: /public
+
+block:
+  url: http://89.108.115.118/nbc
+  new: /newblock
+  all: /chain
+
+author: http://89.108.115.118/
